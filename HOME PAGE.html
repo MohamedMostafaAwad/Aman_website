@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>HOME PAGE</title>
+    <link rel="icon" href="LOGO.png">
+        
+        <style>
+            nav {
+            width: 90%;
+            min-width: 700px;
+            height: 100vh;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: auto;
+            margin-top: -8%;
+        }
+
+            nav a {
+                position: relative;
+                text-decoration: none;
+                font-size: 40px;
+                font-family:'Courier New', Courier, monospace;
+                color: darkslategray;
+                transition: 0.5s;
+                padding: 10px;
+                border: 0.5px solid #3498db;
+                box-shadow: 0px 15px 30px rgba(1 1 1 / 50% );
+            }
+
+        a::before {
+            content: ' ';
+            position: absolute;
+            width: 100%;
+            right: 0%;
+            height: 4px;
+            width: 0%;
+            background-color: darkcyan;
+            top: -6px;
+            transition: o.5s;
+        }
+
+        a:hover {
+            color: darkturquoise;
+        }
+
+            a:hover::before {
+                width: 100%;
+            }
+
+        .title {
+            display: flex;
+            justify-content: center;
+            color: #3a6cf4;
+            font-size: 3em;
+            font-weight: 800;
+            margin-bottom: 20px;
+        }
+
+        .content {
+            display: flex;
+            justify-content: center;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .card {
+            background-color: whitesmoke;
+            width: 21.25em;
+            box-shadow: 0 5px 25px rgba(1 1 1 / 50% );
+            border-radius: 10px;
+            padding: 25px;
+            margin: 20px;
+            text-align: center;
+        }
+
+            .card:hover {
+                transform: scale(1.1);
+                transition: 1s ease;
+            }
+
+        .icon {
+            color: #3a6cf4;
+            font-size: 8em;
+            text-align: center;
+        }
+
+        .info {
+            text-align: center;
+        }
+
+            .info h3 {
+                color: #3a6cf4;
+                font-size: 1.2em;
+                font-weight: 700;
+                margin: 10px
+            }
+
+        .pn {
+            font-size: 1.5em;
+            font-weight: 700;
+            padding: 10px;
+            color: #3a6cf4;
+        }
+        .btns{flex-direction: row;}
+        </style>
+    </head>
+    <body>
+    
+        
+        <p style="font-size: 150px;font-family: fantasy; color: darkcyan;margin-left: 36%;margin-bottom: -5%;margin-top: 12%;cursor: pointer;">
+            <span style="color:darkslategray ;font-size: 200px;font-family: fantasy;"> A</span>m<span style="color: darkslategray;font-size: 200px;font-family:fantasy;">A</span>n</p>
+            <hr style="border: 3px solid; width:40%; margin-left: 0%; margin-top: 1.6%;">
+            <hr style="border: 3px solid; width:40%;margin-left: 59%;margin-top: -1%;">
+            
+            <nav>
+                <a href="HOME PAGE.html">Home page </a>
+                <a href="About Us.html">About Us</a>
+                <a href="SERVICES.html">Our service</a>
+                <a href="Website Map.html">Website map  </a>
+        
+            </nav>
+            <hr style="margin: 5%;">
+            <section class="cards" id="connect">
+                <h2 class="title">CEEP IN TOUTH WITH US </h2>
+                <div class="content">
+        
+                    <div class="card">
+                        <div class="icon">
+                            <a href="https://www.facebook.com/?locale=ar_AR">    <img style="width: 60px;;" src="facebook.png"> </a>
+                        </div>
+                        <div class="info">
+                            <h3>  You can visit us on social media  </h3>
+                            <p>   subscribe to our media to receive everything new </p>
+        
+                        </div>
+                    </div>
+        
+                    <div class="card">
+                        <div class="icon">
+                            <img style="width: 60px;" src="phone-call.png">
+                        </div>
+                        <div class="info">
+                            <h3> To communicate with us</h3>
+                            <p class="pn">+201273667385</p>
+                            <p> You can send a message by mail or call us </p>
+        
+        
+                        </div>
+        
+                    </div>
+        
+        
+                </div>
+        
+        
+            </section>
+    </body>
+</html>

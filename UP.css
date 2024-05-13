@@ -1,0 +1,20 @@
+body{
+    
+}
+.up{
+    position: fixed;
+    bottom: 15px;
+    right:-30px;
+    background-color: #3a6cf4;
+    color: white;
+    font-weight: bold;
+    font-size: 10px;
+    padding: 10px;
+    border-radius: 4px;
+    font-family: Arial, Helvetica, sans-serif;
+    cursor: pointer;
+    transition: 0.2s;
+}
+.up.show{
+    right:15px;
+}

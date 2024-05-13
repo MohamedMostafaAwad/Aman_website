@@ -1,0 +1,39 @@
+*{
+    margin: 0 ;
+}
+.container{
+    width: 190px;
+    height:100vh;
+    background:#4070f4df ;
+    color: white;
+    
+}
+.container p{
+    padding: 20px;
+}
+.container p:hover,button:hover{
+    background: black;
+    cursor: pointer;
+}
+button{
+    margin-top: 2%;
+    background: #4070f4df;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    width:200px ;
+    height: 70px;
+    font-size: 50px;
+    font-family: 'Courier New', Courier, monospace;
+    transition: all 0.5s;
+}
+
+
+
+#close{
+    position:absolute;
+    left: 200px;
+}
+.hide{
+    display: none;
+}

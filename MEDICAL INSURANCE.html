@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>MEDICAL INSURANCE</title>
+    <link rel="icon" href="Logo-oreginal-PNG.png">
+    <link rel="stylesheet" href="UP.css">
+
+        
+        <style>
+            body{cursor: pointer;
+                 background-color: Ivory;
+            }
+            .page{height: 10vh;}
+        .page::before{ content: "";
+        margin-left: -50%;
+        margin-top: -30%;
+        padding: 0%;
+        position:fixed;
+        width: 55%;
+        height: 25%;
+        background-color: #3498db ;       
+        left: 50%;
+        top:50%;
+        transform:translateX(-50%) skew(0,-10deg);
+        border-radius: 50%;
+        z-index: -1;
+        animation: waving 10s ease-in-out infinite alternate;}
+        @keyframes waving {
+            from{
+                transform: translateX(-50%)skew(0 , -5deg);
+            }
+            to{
+                transform: translateX(-30%)skew(5deg , 0 );
+                
+            }
+        }
+        .page2{height: 10vh;}
+        .page2::before{ content: "";
+        margin-left: 43%;
+        margin-top: -32%;
+        padding: 0%;
+        position:fixed;
+        width: 60%;
+        height: 30%;
+        background-color: darkturquoise ;       
+        left: 50%;
+        top:50%;
+        transform:translateX(-50%) skew(0,-10deg);
+        border-radius: 50%;
+        z-index: -1;
+        animation: waving 10s ease-in-out infinite alternate;}
+        @keyframes waving {
+            from{
+                transform: translateX(-50%)skew(0 , -5deg) ;
+            }
+            to{
+                transform: translateX(-30%)skew(5deg , 0 ) ;
+                
+            }
+        }
+            
+            .home{background-color: whitesmoke;width: 3em;box-shadow: 0 7px 20px rgba(1 1 1 / 50% );border-radius: 10px;padding: 10px; margin: 10px;text-align: center;margin-left: 85%;margin-top: 0cm;}
+        .home:hover{ box-shadow: 0 7px 20px #3a6cf4;transform: scale(1.1); transition: 1s ease;}
+            nav {
+               
+                min-width: 700px;
+                height: 150PX;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: auto;
+                margin-top: -8%;
+             }
+            nav a {position: relative ;
+            text-decoration: none;
+            font-size: 50px;
+            font-family:sans-serif ;
+            color: darkslategray;
+            transition: 0.5s;
+            padding:10px;
+            border: 0.5px solid #3498db;
+            box-shadow: 0px 15px 30px rgba(1 1 1 / 50% ); }
+        a::before{ content: ' ';  position: absolute;width: 100%; right: 0%; height:4px ; width: 0%; background-color: darkcyan; top: -6px; transition:o.5s;}
+        a:hover{color: darkturquoise;}
+        a:hover::before{width: 100%;}
+        .title{display: flex;justify-content: center;color: rgba(0, 0, 0, 0.916); font-size: 3em;font-weight: 800;margin-bottom: 20px;cursor: pointer;}
+        .content{display: flex;justify-content: center;flex-direction:row ; flex-wrap: wrap;}
+        .card{background-color: whitesmoke;width: 21.25em;box-shadow: 0 5px 25px rgba(1 1 1 / 50% );border-radius: 30px;padding: 15px; margin: 10px; text-align: center;}
+        .card:hover{transform: scale(1.1); transition: 1s ease;}
+        .icon{ color: #3a6cf4;font-size:8em;text-align: center;}
+        .info{ text-align: center;}
+        .info h3{ color: #3a6cf4;font-size: 1.2em; font-weight: 700; margin: 10px}
+        .pn{font-size: 1.5em; font-weight:700; padding: 10px;color: #3a6cf4;} 
+        p,h3 {cursor: pointer;}
+        .block{background-color:rgba(1 1 1 / 90% );}
+        .em1{width: 40px;margin-left: 47%;margin-top: -42px;margin-bottom: 43px;}
+        .em2{width: 40px;margin-left: -10%;margin-top: -42px;margin-bottom: 43px;}
+        
+        .day{margin-left: 70%; font-size: 70px;}
+        .month{margin-left: 40%; font-size: 70px; margin-top: -160px;}
+        .year{margin-left: 10%; font-size: 70px; margin-top: -160px;}
+        .next{margin-left: 45%;margin-top: 5%;padding: 10px;transition: all 0.5s; color: none;background-color: black;border: 1px solid black; border-radius: 10px;}
+        .next:hover{margin-left: 45%;margin-top: 6%;padding: 5px;transition: all 0.5s; color:black;background-color:none;}
+        .content{
+                     display: flex;
+                    justify-content:center;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+        
+        
+
+                            .project-title{
+                                display: flex;
+                                justify-content: center;
+                                font-size: 3em;
+                                font-weight: 500;
+                                color: #1A4D2E;
+                                padding-bottom: 5px;
+                                margin-bottom: 20px;
+                            }
+
+            .project .content{
+                margin-top: 10px;
+            }
+
+            .project-card{
+                color: white;
+                background-image: linear-gradient(to top, #1A4D2E, #4F6F52, #E8DFCA, #F5EFE6);
+                padding: 10px;
+                margin: 15px;
+                overflow: hidden;
+                min-height: 40em;
+                width: 30em;
+                border-radius: 10px;
+                border: 2px solid #E6E6FA;
+                transition: 0.7s ease;
+                box-shadow: 10px 0px 10px #4f6f52cf;
+                border-radius: 30px;
+                
+            
+            }
+
+            .project-card:hover{
+                transform: scale(1.1);
+            }
+
+            .project-card:hover .image{
+                opacity: 0.9;
+            }
+
+            .image img{
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            .category{
+                text-align: center;
+                font-size: 1.4em;
+                font-weight: bold;
+                text-transform: uppercase;
+                
+            }
+
+            .detail{
+                display: flex;
+                justify-content: space-between;
+                margin:10px ;
+                font-size:1.3em ;
+                font-weight: 700;
+
+            }
+
+            .moredetali{
+                text-decoration: none;
+                color: white;
+            }
+            
+
+                            .contact-card{
+                    color: darkslategray;
+                    background-color: white;
+                    padding: 5px;
+                    margin: 20px;
+                    overflow: hidden;
+                    min-height: 4em;
+                    width: 15em;
+                    border-radius: 10px;
+                    border: 2px solid gray;
+                    justify-content: space-between;
+                }
+
+                .phone {
+                    text-transform: uppercase;
+                    text-align: center;
+                    line-height: 1px;
+
+                }
+
+                .fax {
+                    text-transform: uppercase;
+                    text-align: center;
+                    line-height: 1px;
+                    
+                }
+
+
+                .email {
+                   
+                    text-align: center;
+                    line-height: 1px;
+                    
+                }
+        </style>
+    </head>
+    <body>
+        <span class="up">up</span>
+        <script src="UP.js"></script>
+        <div class="page"></div>
+        <div class="page2"></div>
+        <div class="home">
+            <a href="HOME PAGE.html">  <img style="width:50px; height: 40px;" src="homeicon.png"></a>
+        </div>
+        <section class="project" id="project">
+            <h2 class="project-title">insurance companies</h2>
+
+            <div class="content">
+
+
+                  <div class="project-card">
+
+
+                    <div class="image">
+                        <img src="saga.jpg" alt="" height="270px">
+                    </div>
+
+
+                    <div class="project-info">
+                        <p class="category">Saga</p>
+
+                        <strong class="detail">
+                            <a href="https://www.saga.co.uk/health-insurance" class="moredetali">More Details</a>
+                        </strong>
+
+                        
+                    </div>
+
+                    <div class="content">
+                        <div class="contact-card">
+                            <div class="phone"><h4>Phone</h4> <span>  0800 056 9200 </span> </div>
+
+                        </div>
+
+
+                        <div class="contact-card">
+                           
+                            <div class="fax"><h4>fax</h4>  <span>By and by.</span> </div>
+                        </div>
+
+
+                        <div class="contact-card">
+                            
+                            <div class="email"><h4>Email</h4> <span><a href="mailto:customerservices@sagatravelgroup.com">customerservices@sagatravelgroup.com</a></span> </div>
+                        </div>
+
+
+                    </div>
+
+                </div>
+                <div class="project-card">
+
+
+                    <div class="image">
+                        <img src="aviva.jpg" alt="" height="270px">
+                    </div>
+
+
+                    <div class="project-info">
+                        <p class="category">AVIVA</p>
+
+                        <strong class="detail">
+                    
+                            <a href="https://www.aviva.co.uk/health/health-products/health-insurance/" class="moredetali">More Details</a>
+                        </strong>
+
+                    </div>
+
+
+                    <div class="content">
+                        <div class="contact-card">
+                            <div class="phone"><h4>Phone</h4> <span>0800 404 9418</span> </div>
+
+                        </div>
+
+
+                        <div class="contact-card">
+                           
+                            <div class="fax"><h4>fax</h4>  <span> By and by. </span> </div>
+                        </div>
+
+
+                        <div class="contact-card">
+                            
+                            <div class="email"><h4>Email</h4> <span><a href="mailto:hcreg@aviva.com.">hcreg@aviva.com.</a></span> </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="project-card">
+
+
+                    <div class="image">
+                        <img src="axauk.jpg" alt="" height="270px">
+                    </div>
+
+
+                    <div class="project-info">
+                        <p class="category">Axa Health</p>
+
+                        <strong class="detail">
+                            
+                            <a href="https://www.axahealth.co.uk/health-insurance/" class="moredetali">More Details</a>
+                        </strong>
+
+                    </div>
+
+
+                    <div class="content">
+                        <div class="contact-card">
+                            <div class="phone"><h4>Phone</h4> <span>00 44 1892 512345</span> </div>
+
+                        </div>
+
+
+                        <div class="contact-card">
+                           
+                            <div class="fax"><h4>fax</h4>  <span> By and by.</span> </div>
+                        </div>
+
+
+                        <div class="contact-card">
+                            
+                            <div class="email"><h4>Email</h4> <span><a href="mailto:claims@axa.ie.">claims@axa.ie.</a></span> </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+                <div class="project-card">
+                    <div class="image">
+                        <img src="bupa.jpg" alt="" height="270px">
+                    </div>
+
+
+                    <div class="project-info">
+                        <p class="category">Buba</p>
+
+                        <strong class="detail">
+                           
+                            <a href="https://www.bupa.co.uk/healthcare-professionals" class="moredetali">More Details</a>
+                        </strong>
+
+                    </div>
+                    <div class="content">
+                        <div class="contact-card">
+                            <div class="phone"><h4>Phone</h4> <span> 0800 332 000 </span> </div>
+
+                        </div>
+                        <div class="contact-card">
+                           
+                            <div class="fax"><h4>fax</h4>  <span> By and by. </span> </div>
+                        </div>
+                        <div class="contact-card">
+                            
+                            <div class="email"><h4>Email</h4> <span><a href="optmeout@bupa.com.">optmeout@bupa.com.</a></span> </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+ 
+        <div style="padding: 200px;">
+
+        </div>
+
+        <nav>
+            
+            <a href="عنا.html">About Insurance</a>
+            <a href="ing.rej.html">Our service</a>
+            <a href="start.html">Home Page</a>
+            
+            
+        </nav>
+        <footer class="cards" id="connect" style="background-image: linear-gradient(to right, #B3C8CF,#BED7DC,#F1EEDC, #E5DDC5);">
+<br>
+<br>
+<img src="Logo-oreginal-PNG.png" style="width: 300px; margin-left: 40%;margin-bottom: -5%;margin-top: -5%;">
+                <h2 class="title">Keep In Touch With Us</h2>
+                <div class="content">
+                    
+                    <div class="card">
+                        <div class="icon">
+                        <a href="https://www.facebook.com/?locale=ar_AR">    <img style="width: 60px;;" src="facebook.png" > </a>
+                        </div>
+                        <div class="info">
+                            <h3>You can visit us on social media</h3>
+                            <p>Subscribe to our media to receive everything new</p>
+                            
+                        </div>
+                    </div> 
+                
+                    <div class="card">
+                        <div class="icon">
+                            <img style="width: 60px;" src="phone-call.png">
+                        </div>
+                        <div class="info">
+                            <h3>To communicate with us</h3>
+                            <p class="pn">+00441098676156</p>
+                            <p>You can send a message by mail or call us</p>
+                            
+                            
+                        </div>
+                        
+                    </div>
+                    
+                    
+            
+                
+                
+            
+
+
+        </footer>
+    </body>
+</html>

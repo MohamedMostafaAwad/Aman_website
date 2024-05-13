@@ -1,0 +1,719 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>التأمين الصحي في السعوديه</title>
+        <link rel="icon" href="Logo-oreginal-PNG.png">
+        <link rel="stylesheet" href="UP.css">
+        
+        <style>
+            body{cursor: pointer;
+                 background-color: Ivory;
+            }
+            .page{height: 10vh;}
+        .page::before{ content: "";
+        margin-left: -50%;
+        margin-top: -30%;
+        padding: 0%;
+        position:fixed;
+        width: 55%;
+        height: 25%;
+        background-color: #3498db ;       
+        left: 50%;
+        top:50%;
+        transform:translateX(-50%) skew(0,-10deg);
+        border-radius: 50%;
+        z-index: -1;
+        animation: waving 10s ease-in-out infinite alternate;}
+        @keyframes waving {
+            from{
+                transform: translateX(-50%)skew(0 , -5deg);
+            }
+            to{
+                transform: translateX(-30%)skew(5deg , 0 );
+                
+            }
+        }
+        .page2{height: 10vh;}
+        .page2::before{ content: "";
+        margin-left: 43%;
+        margin-top: -32%;
+        padding: 0%;
+        position:fixed;
+        width: 60%;
+        height: 30%;
+        background-color: darkturquoise ;       
+        left: 50%;
+        top:50%;
+        transform:translateX(-50%) skew(0,-10deg);
+        border-radius: 50%;
+        z-index: -1;
+        animation: waving 10s ease-in-out infinite alternate;}
+        @keyframes waving {
+            from{
+                transform: translateX(-50%)skew(0 , -5deg) ;
+            }
+            to{
+                transform: translateX(-30%)skew(5deg , 0 ) ;
+                
+            }
+        }
+            
+            .home{background-color: whitesmoke;width: 3em;box-shadow: 0 7px 20px rgba(1 1 1 / 50% );border-radius: 10px;padding: 10px; margin: 10px;text-align: center;margin-left: 85%;margin-top: 0cm;}
+        .home:hover{ box-shadow: 0 7px 20px #3a6cf4;transform: scale(1.1); transition: 1s ease;}
+            nav {
+               
+                min-width: 700px;
+                height: 150PX;
+                display: flex;
+                justify-content: space-around;
+                align-items: center;
+                margin: auto;
+                margin-top: -8%;
+             }
+            nav a {position: relative ;
+            text-decoration: none;
+            font-size: 50px;
+            font-family:sans-serif ;
+            color: darkslategray;
+            transition: 0.5s;
+            padding:10px;
+            border: 0.5px solid #3498db;
+            box-shadow: 0px 15px 30px rgba(1 1 1 / 50% ); }
+        a::before{ content: ' ';  position: absolute;width: 100%; right: 0%; height:4px ; width: 0%; background-color: darkcyan; top: -6px; transition:o.5s;}
+        a:hover{color: darkturquoise;}
+        a:hover::before{width: 100%;}
+        .title{display: flex;justify-content: center;color:rgba(0, 0, 0, 0.803); font-size: 3em;font-weight: 800;margin-bottom: 20px;cursor: pointer;}
+        .content{display: flex;justify-content: center;flex-direction:row ; flex-wrap: wrap;}
+        .card{background-color: whitesmoke;width: 21.25em;box-shadow: 0 5px 25px rgba(1 1 1 / 50% );border-radius: 30px;padding: 15px; margin: 10px; text-align: center;}
+        .card:hover{transform: scale(1.1); transition: 1s ease;}
+        .icon{ color: #3a6cf4;font-size:8em;text-align: center;}
+        .info{ text-align: center;}
+        .info h3{ color: #3a6cf4;font-size: 1.2em; font-weight: 700; margin: 10px}
+        .pn{font-size: 1.5em; font-weight:700; padding: 10px;color: #3a6cf4;} 
+        p,h3 {cursor: pointer;}
+        .block{background-color:rgba(1 1 1 / 90% );}
+        .em1{width: 40px;margin-left: 47%;margin-top: -42px;margin-bottom: 43px;}
+        .em2{width: 40px;margin-left: -10%;margin-top: -42px;margin-bottom: 43px;}
+        
+        .day{margin-left: 70%; font-size: 70px;}
+        .month{margin-left: 40%; font-size: 70px; margin-top: -160px;}
+        .year{margin-left: 10%; font-size: 70px; margin-top: -160px;}
+        .next{margin-left: 45%;margin-top: 5%;padding: 10px;transition: all 0.5s; color: none;background-color: black;border: 1px solid black; border-radius: 10px;}
+        .next:hover{margin-left: 45%;margin-top: 6%;padding: 5px;transition: all 0.5s; color:black;background-color:none;}
+        
+        
+        .content{
+                     display: flex;
+                    justify-content:center;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                }
+        
+        
+
+                            .project-title{
+                                display: flex;
+                                justify-content: center;
+                                font-size: 3em;
+                                font-weight: 500;
+                                color: #1A4D2E;
+                                padding-bottom: 5px;
+                                margin-bottom: 20px;
+                            }
+
+            .project .content{
+                margin-top: 10px;
+            }
+
+            .project-card{
+                color: white;
+                background-image: linear-gradient(to top, #1A4D2E, #4F6F52, #E8DFCA, #F5EFE6);
+                padding: 10px;
+                margin: 15px;
+                overflow: hidden;
+                min-height: 40em;
+                width: 30em;
+                border-radius: 10px;
+                border: 2px solid #E6E6FA;
+                transition: 0.7s ease;
+                box-shadow: 10px 0px 10px #4f6f52cf;
+                border-radius: 30px;
+                
+            
+            }
+
+            .project-card:hover{
+                transform: scale(1.1);
+            }
+
+            .project-card:hover .image{
+                opacity: 0.9;
+            }
+
+            .image img{
+                width: 100%;
+                border-radius: 30px;
+            }
+
+            .category{
+                text-align: center;
+                font-size: 1.4em;
+                font-weight: bold;
+                text-transform: uppercase;
+                
+            }
+
+            .detail{
+                display: flex;
+                justify-content: space-between;
+                margin:10px ;
+                font-size:1.3em ;
+                font-weight: 700;
+
+            }
+
+
+            .moredetali{
+                text-decoration: none;
+                color: white;
+            }
+            
+
+                            .contact-card{
+                    color: darkslategray;
+                    background-color: white;
+                    padding: 5px;
+                    margin: 20px;
+                    overflow: hidden;
+                    min-height: 4em;
+                    width: 15em;
+                    border-radius: 10px;
+                    border: 2px solid gray;
+                    justify-content: space-between;
+                }
+
+
+                .phone {
+                    text-transform: uppercase;
+                    text-align: center;
+                    line-height: 1px;
+
+                }
+
+                .fax {
+                    text-transform: uppercase;
+                    text-align: center;
+                    line-height: 1px;
+                    
+                }
+
+
+                .email {
+                   
+                    text-align: center;
+                    line-height: 1px;
+                    
+                }
+
+
+
+        
+        </style>
+    </head>
+    <body>
+        <span class="up">up</span>
+        <script src="UP.js"></script>
+        <div class="page"></div>
+        <div class="page2"></div>
+        <div class="home">
+            <a href="الصفحه الرئيسيه.html">  <img style="width:50px; height: 40px;" src="homeicon.png"></a>
+        </div>
+
+
+        <section class="project" id="project">
+            <h2 class="project-title">insurance companies</h2>
+
+            <div class="content">
+
+
+                <div class="project-card">
+
+
+                    <div class="image">
+                        <img src="aaacig.jpg" alt="">
+                    </div>
+
+
+                    <div class="project-info">
+                        <p class="category">acig</p>
+
+                        <strong class="detail">
+                            <a href="https://www.acig.com.sa/ar/products?PageNumber=3" class="moredetali">More Details</a>
+                        </strong>
+                        
+                    </div>
+
+                    <div class="content">
+                        <div class="contact-card">
+                            <div class="phone"><h4>Phone</h4> <span>+966 11 4852626</span> </div>
+
+                        </div>
+
+
+                        <div class="contact-card">
+                           
+                            <div class="fax"><h4>fax</h4>  <span>+966 11 4890555</span> </div>
+                        </div>
+
+
+                        <div class="contact-card">
+                            
+                            <div class="email"><h4>Email</h4> <span><a href="mailto:h.rostom@acig.com.sa">h.rostom@acig.com.sa</a></span> </div>
+
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+                
+                <div class="project-card">
+
+
+                    <div class="image">
+                        <img src="waaaalaa.jpg" alt="">
+                    </div>
+
+
+                    <div class="project-info">
+                        <p class="category">walaa</p>
+
+                        <strong class="detail">
+                    
+                            <a href="https://i-insure.walaa.com/online/Customer?PR=RW1hW3dhbGFhXTcwMFt3XQ==" class="moredetali">More Details</a>
+                        </strong>
+
+                    </div>
+
+
+                    <div class="content">
+                        <div class="contact-card">
+                            <div class="phone"><h4>Phone</h4> <span>+966 13 8299400</span> </div>
+
+                        </div>
+
+
+                        <div class="contact-card">
+                           
+                            <div class="fax"><h4>fax</h4>  <span>+966 13 8652255</span> </div>
+                        </div>
+
+
+                        <div class="contact-card">
+                        
+                            <div class="email"><h4>Email</h4> <span><a href="mailto:walaa@walaa.com">walaa@walaa.com</a></span> </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                
+                <div class="project-card">
+
+
+                    <div class="image">
+                        <img src="guulf.jpg" alt="" height="250px">
+                    </div>
+
+
+                    <div class="project-info">
+                        <p class="category">gulf general</p>
+
+                        <strong class="detail">
+                            
+                            <a href="https://www.ggi-sa.com/ar/detail/corporate/health-care--and-life-insurance/" class="moredetali">More Details</a>
+                        </strong>
+
+                    </div>
+
+
+                    <div class="content">
+                        <div class="contact-card">
+                            <div class="phone"><h4>Phone</h4> <span>+966 12 6516610</span> </div>
+
+                        </div>
+
+
+                        <div class="contact-card">
+                           
+                            <div class="fax"><h4>fax</h4>  <span>+966 12 6510075</span> </div>
+                        </div>
+
+
+                        <div class="contact-card">
+                            
+                            <div class="email"><h4>Email</h4> <span><a href="mailto:amagboul@ggi-sa.com">amagboul@ggi-sa.com</a></span> </div>
+                            
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+
+                
+                <div class="project-card">
+
+
+                    <div class="image">
+                        <img src="gigggg.jpg" alt="">
+                    </div>
+
+
+                    <div class="project-info">
+                        <p class="category">gig</p>
+
+                        <strong class="detail">
+                           
+                            <a href="https://www.gig.com.eg/medical" class="moredetali">More Details</a>
+                        </strong>
+
+                    </div>
+
+
+                    <div class="content">
+                        <div class="contact-card">
+                            <div class="phone"><h4>Phone</h4> <span> +966 11 4776706</span> </div>
+
+                        </div>
+
+
+                        <div class="contact-card">
+                           
+                            <div class="fax"><h4>fax</h4>  <span> +966 11 4780418</span> </div>
+                        </div>
+
+
+                        <div class="contact-card">
+                          
+                            <div class="email"><h4>Email</h4> <span><a href="mailto:Raud.Alsuwailem@gig.sa">Raud.Alsuwailem@gig.sa</a></span> </div>
+                        </div>
+
+
+                    </div>
+
+
+                </div>
+
+
+                
+                <div class="project-card">
+
+
+                    <div class="image">
+                        <img src="rajh.jpg" alt="" height="250px">
+                    </div>
+
+
+                    <div class="project-info">
+                        <p class="category">Al Rajehi Takaful</p>
+
+                        <strong class="detail">
+                            
+                            <a href="https://www.alrajhitakaful.com/ar/business/health-insurance" class="moredetali">More Details</a>
+                        </strong>
+
+                    </div>
+
+
+                    <div class="content">
+                        <div class="contact-card">
+                            <div class="phone"><h4>Phone</h4> <span>8001184444</span> </div>
+
+                        </div>
+
+
+                        <div class="contact-card">
+                            
+                            <div class="email"><h4>Email</h4> <span><a href="mailto:customerservice@alrajhitakaful.com">customerservice@alrajhitakaful.com</a></span> </div>
+                        </div>
+
+
+                    </div>
+
+
+                  
+
+                </div>
+
+
+                <div class="project-card">
+
+
+                    <div class="image">
+                        <img src="saico.jpg" alt="" height="250px">
+                    </div>
+
+
+                    <div class="project-info">
+                        <p class="category">Saico</p>
+
+                        <strong class="detail">
+                            
+                            <a href="https://www.saico.com.sa/ar/service/%d8%a7%d9%84%d8%aa%d8%a3%d9%85%d9%8a%d9%86-%d8%a7%d9%84%d8%b7%d8%a8%d9%8a-%d9%84%d9%84%d9%85%d8%ac%d9%85%d9%88%d8%b9%d8%a7%d8%aa/" class="moredetali">More Details</a>
+                        </strong>
+
+                    </div>
+
+
+                    <div class="content">
+                        <div class="contact-card">
+                            <div class="phone"><h4>Phone</h4> <span>2002-124-800 </span> </div>
+
+                        </div>
+
+
+                        <div class="contact-card">
+                            
+                            <div class="email"><h4>Email</h4> <span><a href="mailto:care@saico.com.sa">care@saico.com.sa</a></span> </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+
+
+                <div class="project-card">
+
+
+                    <div class="image">
+                        <img src="medgulf.jpg" alt="" height="250px">
+                    </div>
+
+
+                    <div class="project-info">
+                        <p class="category">MEDGULF</p>
+
+                        <strong class="detail">
+                            
+                            <a href="https://www.medgulf.com.sa/home/salem-program" class="moredetali">More Details</a>
+                        </strong>
+
+                    </div>
+
+
+                    <div class="content">
+                        <div class="contact-card">
+                            <div class="phone"><h4>Phone</h4> <span>800 118 8555</span> </div>
+
+                        </div>
+
+
+                        
+                        <div class="contact-card">
+                           
+                            <div class="fax"><h4>fax</h4>  <span>+966 (11) - 4055588</span> </div>
+                        </div>
+
+
+                        <div class="contact-card">
+                            
+                            <div class="email"><h4>Email</h4> <span><a href="mailto:customer-service@medgulf.com.sa">customer-service@medgulf.com.sa</a></span> </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+
+
+                    <div class="image">
+                        <img src="arabian.jpg" alt="" height="250px">
+                    </div>
+
+
+                    <div class="project-info">
+                        <p class="category">Arabian Shield insurance</p>
+
+                        <strong class="detail">
+                            
+                            <a href="https://www.der3.com/ar/%D8%A8%D8%B1%D9%86%D8%A7%D9%85%D8%AC-%D8%AA%D8%A3%D9%85%D9%8A%D9%86-%D8%B5%D8%AD%D9%8A" class="moredetali">More Details</a>
+                        </strong>
+
+                    </div>
+
+
+                    <div class="content">
+                        <div class="contact-card">
+                            <div class="phone"><h4>Phone</h4> <span>8001 247 247</span> </div>
+
+                        </div>
+
+
+                        <div class="contact-card">
+                            
+                            <div class="email"><h4>Email</h4> <span><a href="mailto:customerservice@arabianshield.com">customerservice@arabianshield.com</a></span> </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+                
+
+
+                <div class="project-card">
+
+
+                    <div class="image">
+                        <img src="alsagr.jpg" alt="" height="250px">
+                    </div>
+
+
+                    <div class="project-info">
+                        <p class="category">Al Sagr insurance</p>
+
+                        <strong class="detail">
+                            
+                            <a href="https://www.alsagr.com/Products.aspx" class="moredetali">More Details</a>
+                        </strong>
+
+                    </div>
+
+
+                    <div class="content">
+                        <div class="contact-card">
+                            <div class="phone"><h4>Phone</h4> <span>920001043</span> </div>
+
+                        </div>
+
+
+                        <div class="contact-card">
+                            
+                            <div class="email"><h4>Email</h4> <span><a href="mailto:info@alsagr.com">info@alsagr.com</a></span> </div>
+
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                <div class="project-card">
+
+
+                    <div class="image">
+                        <img src="salama.jpg" alt="" height="250px">
+                    </div>
+
+
+                    <div class="project-info">
+                        <p class="category">SALAMA</p>
+
+                        <strong class="detail">
+                            
+                            <a href="https://www.salama.com.sa/products/medical-insurance/sme-raha-insurance" class="moredetali">More Details</a>
+                        </strong>
+
+                    </div>
+
+
+                    <div class="content">
+                        <div class="contact-card">
+                            <div class="phone"><h4>Phone</h4> <span>920023355 | 8002440002</span> </div>
+
+                        </div>
+
+
+                        <div class="contact-card">
+                            
+                            <div class="email"><h4>Email</h4> <span><a href="mailto:tocustomer.care@salama.com.sa">tocustomer.care@salama.com.sa</a></span> </div>
+                        </div>
+
+
+                    </div>
+                </div>
+
+
+                
+
+
+
+
+            </div>
+
+
+
+
+        </section>
+
+                <div style="padding: 200px;">
+
+                </div>
+                <nav>
+                    <a href="عنا.html">عن التأمين</a>
+                    <a href="تسجيل في طبي السعويه.html">خدماتنا</a>
+                    <a href="Start.html">الرئيسيه</a>
+                    
+                    
+                </nav>
+                <footer class="cards" id="connect" style="background-image: linear-gradient(to right, #B3C8CF,#BED7DC,#F1EEDC, #E5DDC5);">
+                    <br>
+                    <br>
+            <img src="Logo-oreginal-PNG.png" style="width: 300px; margin-left: 40%;margin-bottom: -5%;margin-top: -5%;">
+
+
+                        <h2 class="title">تجدنا دائماَ من خلال</h2>
+                        <div class="content">
+                            
+                            <div class="card">
+                                <div class="icon">
+                                <a href="https://www.facebook.com/?locale=ar_AR">    <img style="width: 60px;;" src="facebook.png" > </a>
+                                </div>
+                                <div class="info">
+                                    <h3>زيارتنا عبر وسائل التواصل الاجتماعي</h3>
+                                    <p>يمكنك الاشتراك في الوسائط ليصلك كل جديد</p>
+                                    
+                                </div>
+                            </div> 
+                        
+                            <div class="card">
+                                <div class="icon">
+                                    <img style="width: 60px;" src="phone-call.png">
+                                </div>
+                                <div class="info">
+                                    <h3>للتواصل معنا</h3>
+                                    <p class="pn">+201098676156</p>
+                                    <p>يمكنك ارسال رساله عبر البريد او الاتصال بنا </p>
+                                    
+                                    
+                                </div>
+                                
+                            </div>
+                            
+                            
+                     
+                        
+                        
+                    
+               
+
+                </footer>
+
+        
+    </body>
+</html>
