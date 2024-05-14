@@ -33,7 +33,7 @@ body{
   display: flex;
   margin-top: -25%;
   margin-left: 15%;
-  letter-spacing: 4PX;
+  letter-spacing: 0PX;
 }
 .wrapper .static-txt{
   color: #fff;
