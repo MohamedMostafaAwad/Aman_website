@@ -72,8 +72,8 @@ body{
   left: 0;
   height: 100%;
   width: 100%;
-  background: rgb(0, 0, 0);
-  border-left: 5px solid #4070f4;
+  background: rgba(0, 0, 0, 0);
+  border-left: 5px solid #4070f400;
   animation: typing 3s steps(7) infinite;
   border-radius: 15px;
 }
