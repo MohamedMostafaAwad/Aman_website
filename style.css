@@ -1,4 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+/* For small screens, such as phones */
+@media (max-width: 767px) {
+  /* CSS rules for small screens */
+}
+
+/* For medium screens, such as tablets */
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* CSS rules for medium screens */
+}
+
+/* For large screens, such as desktops */
+@media (min-width: 1024px) {
+  /* CSS rules for large screens */
+}
 *{
   margin: 0;
   padding: 0;
